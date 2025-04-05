@@ -61,7 +61,7 @@ How to Run the Project
 3.	Update database connection details in the JDBC code.
 4.	Run the project on Apache Tomcat server.
 5.	Open your browser and visit:
-http://localhost:8081/TrainTicketReservationSystem/
+http://localhost:8081/TrainBook/
 
 Sample Credentials
 Admin
@@ -79,3 +79,51 @@ Possible Future Improvements
 
 USER INTERFACE
 ![user interface](https://github.com/user-attachments/assets/685e55e2-a56d-43c9-897b-07d06f93b209)
+
+USER REGISTRATION 
+![user interface](https://github.com/user-attachments/assets/b37bb9ea-a739-40db-b32a-62f590b6e9b5)
+
+
+LOGIN PAGE
+![login page](https://github.com/user-attachments/assets/2a549663-d95b-469a-b1c2-e4e1e6384266)
+
+ADMIN LOGIN
+![admin dashborad](https://github.com/user-attachments/assets/d85e87d0-f6be-4867-a1db-9c8d27f721b7)
+
+ADD TRAINS BY ADMIN
+![add trains by admin](https://github.com/user-attachments/assets/179171eb-b67a-4ec9-bdc8-709be9c4f6e5)
+
+ADMIN DASHBORAD
+![admin dashborad](https://github.com/user-attachments/assets/62bb289f-a002-4922-8daf-59b4d1dd4c2a)
+
+ADMIN SERACH MODULE
+![admin search train deatils](https://github.com/user-attachments/assets/4159c207-4ab0-474f-8e54-c7d34389341b)
+
+ADMIN VIEW TRAINS
+![admin view trains](https://github.com/user-attachments/assets/58ff12c4-1346-4edd-913a-cd4b934a61f5)
+
+USER INTERFACE 
+![view trains](https://github.com/user-attachments/assets/798eeb49-5681-46c2-9cf3-cbb7b9a8f16a)
+
+
+DELETE TRAIN BY ADMIN
+![delete train by admin](https://github.com/user-attachments/assets/48ccb65a-0fbf-42a5-9df1-cf4fc7e8ac06)
+
+EDIT PROFILE
+![edit profile](https://github.com/user-attachments/assets/898b26ef-90d0-4542-82ec-a5efa376598c)
+
+USER FARE DASHBORAD
+![fare dashboard](https://github.com/user-attachments/assets/f0ff64b5-63f9-4392-8f55-2c7faaa9df87)
+
+USER SERACH TRAINS 
+![search trains using train number](https://github.com/user-attachments/assets/9481971c-56f2-4079-aa7b-4093802f995e)
+
+SEAT AVALIBILITY
+![train aval](https://github.com/user-attachments/assets/a1d3e1ad-78f2-4c94-8311-7922afef754c)
+
+TRAINS BETWEEN STATION 
+![trains between stations](https://github.com/user-attachments/assets/1c95fa7b-c6be-4d95-9e7d-18fbdcceedba)
+![trains bt station](https://github.com/user-attachments/assets/00f0a9f9-2e96-4494-bb4f-24299a87f95f)
+
+UPDATE TRAIN DETAILS 
+![update train details](https://github.com/user-attachments/assets/fbef0f59-1aa6-4465-911a-f77f42d642e3)
