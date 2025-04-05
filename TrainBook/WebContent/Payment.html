@@ -1,0 +1,189 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Payments</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<style>
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #000000, #8B0000);
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+header {
+    background: #FFD700;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.home {
+    display: inline-block;
+    margin: 10px;
+}
+
+.menu a {
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: all 0.3s;
+    border-radius: 4px;
+}
+
+.menu a:hover {
+    background: #FFC107;
+    color: black;
+}
+
+.container-fluid {
+    position: relative;
+    margin-top: 50px;
+}
+
+.panel {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.panel-heading {
+    text-align: center;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.panel-body {
+    padding: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #333;
+}
+
+.form-control {
+    border-radius: 5px;
+}
+
+
+.btn-success {
+    background: linear-gradient(to right, #28a745, #218838);
+    border: none;
+    font-size: 18px;
+    padding: 12px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn-success:hover {
+    background: linear-gradient(to right, #218838, #1e7e34);
+}
+
+
+.inlineimage {
+    max-width: 470px;
+    margin-right: 8px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.images {
+    display: inline-block;
+    max-width: 90%;
+    height: auto;
+    width: 22%;
+    margin: 1%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.images:hover {
+    transform: scale(1.1);
+}
+</style>
+</head>
+<body>
+    <div class="hd">
+        <h1>Card Payment</h1>
+    </div>
+
+    <header>
+        <div class="home"><p class="menu"><a href="userhome">Home</a></p></div>
+        <div class="home"><p class="menu"><a href="userviewtrainfwd">View Trains</a></p></div>
+        <div class="home"><p class="menu"><a href="trainbwstnfwd">Trains BW Stations</a></p></div>
+        <div class="home"><p class="menu"><a href="bookingdetails">Booking History</a></p></div>
+        <div class="home"><p class="menu"><a href="fareenqfwd">Fare Enquiry</a></p></div>
+        <div class="home"><p class="menu"><a href="useravailfwd">Seat Availability</a></p></div>
+        <div class="home"><p class="menu"><a href="usersearchtrain">Search By TrainNo</a></p></div>
+        <div class="home"><p class="menu"><a href="userprofile">Profile</a></p></div>
+        <div class="home"><p class="menu"><a href="userlogout">Logout</a></p></div>
+    </header>
+
+  
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-md-5 col-md-offset-3">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Secure Payment</div>
+                    <form role="form" action="paymentsuccess.html" method="post">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="form-group">
+                                        <label>CARD NUMBER</label>
+                                        <input type="tel" class="form-control" placeholder="Valid Card Number" required/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-7 col-md-7">
+                                    <div class="form-group">
+                                        <label>EXPIRATION DATE</label>
+                                        <input type="tel" class="form-control" placeholder="MM / YY" required/>
+                                    </div>
+                                </div>
+                                <div class="col-xs-5 col-md-5 pull-right">
+                                    <div class="form-group">
+                                        <label>CV CODE</label>
+                                        <input type="tel" class="form-control" placeholder="CVC" required/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="form-group">
+                                        <label>CARD OWNER</label>
+                                        <input type="text" class="form-control" placeholder="Card Owner Name" required/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <input type="submit" value="Confirm Payment" class="btn btn-success btn-lg btn-block" />
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="ISO-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Update Train Details</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to bottom, #000000, #8B0000);
+            color: white;
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 20px 0;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .hd {
+            font-size: 28px;
+            font-weight: bold;
+            color: #FFD700;
+        }
+
+        .nav-bar {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            border-radius: 10px;
+            margin-top: 10px;
+            flex-wrap: wrap;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: black;
+            font-weight: 500;
+            padding: 10px 15px;
+            border-radius: 8px;
+            background: #FFD700;
+            transition: 0.3s;
+        }
+
+        .menu a:hover {
+            color: white;
+            background: #FFC107;
+            transform: scale(1.1);
+        }
+
+        .form-container {
+            width: 35%;
+            margin: 20px auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        form input[type="text"] {
+            padding: 8px;
+            width: 80%;
+            border-radius: 5px;
+            border: none;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        form input[type="submit"] {
+            padding: 8px 16px;
+            border-radius: 5px;
+            background: #FFD700;
+            color: black;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+            margin-top: 10px;
+        }
+
+        form input[type="submit"]:hover {
+            background: #FFC107;
+            color: white;
+        }
+
+        .info-section {
+            margin-top: 30px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .info-section h3 {
+            color: #FFD700;
+            margin-bottom: 10px;
+        }
+
+        .info-section p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="hd">Train Ticket Booking</h1>
+        <nav class="nav-bar">
+            <p class="menu"><a href="AdminHome.html">Home</a></p>
+            <p class="menu"><a href="adminviewtrainfwd">View Trains</a></p>
+            <p class="menu"><a href="adminsearchtrainfwd">Search By TrainNo</a></p>
+            <p class="menu"><a href="addtrainfwd">Add Train</a></p>
+            <p class="menu"><a href="cancletrainfwd">Delete Train</a></p>
+            <p class="menu"><a href="updatetrain">Update Train Details</a></p>
+            <p class="menu"><a href="adminlogout">Logout</a></p>
+        </nav>
+    </header>
+
+    <div class="form-container">
+        <h3>Update Train Details</h3>
+        <form action="adminupdatetrain" method="post">
+            <label for="trainnumber">Train Number:</label>
+            <input type="text" id="trainnumber" name="trainnumber" required><br>
+            <input type="submit" value="SEARCH TRAIN">
+        </form>
+    </div>
+
+    <div class="info-section">
+        <h3>About Train Ticket Booking</h3>
+        <p>Our platform provides a seamless way to book train tickets and manage your journey with ease. 
+        Search for available trains, check schedules, and manage your bookings effortlessly.</p>
+        <p>For any assistance, feel free to contact our support team.</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

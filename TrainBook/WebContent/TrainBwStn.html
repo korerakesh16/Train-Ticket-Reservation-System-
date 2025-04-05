@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Trains Between Stations</title>
+<link rel="stylesheet" href="UserHome_Css.css">
+<style>
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css');
+
+body {
+    background: linear-gradient(to right, #001F3F, #8B0000);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+header {
+    background: rgba(52, 58, 64, 0.95);
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    border-bottom: 3px solid #FFD700;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hd {
+    color: #FFD700;
+    font-size: 32px;
+    font-weight: bold;
+    text-shadow: 3px 3px 8px rgba(255, 215, 0, 0.6);
+    margin-bottom: 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 5px 0;
+}
+
+.nav-item a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #FFD700, #FFA500);
+    padding: 8px 15px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    transform: scale(1);
+}
+
+.nav-item a:hover {
+    background: linear-gradient(135deg, #FFA500, #FFD700);
+    color: #002147;
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(255, 215, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .nav-item a {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+}
+
+.form-container {
+    width: 50%;
+    margin: 30px auto;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: black;
+}
+
+input[type="text"], input[type="submit"] {
+    padding: 10px;
+    margin: 10px 0;
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background: linear-gradient(135deg, #FFD700, #FFA500);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(135deg, #FFA500, #FFD700);
+    box-shadow: 0px 4px 8px rgba(255, 215, 0, 0.5);
+}
+</style>
+</head>
+<body>
+    <header>
+        <h1 class="hd">Train Ticket Booking</h1>
+        <nav class="navbar">
+            <div class="nav-item"><a href="userhome">Home</a></div>
+            <div class="nav-item"><a href="userviewtrainfwd">View Trains</a></div>
+            <div class="nav-item"><a href="trainbwstnfwd">Trains Between Stations</a></div>
+            <div class="nav-item"><a href="bookingdetails">Ticket Booking History</a></div>
+            <div class="nav-item"><a href="fareenqfwd">Fare Enquiry</a></div>
+            <div class="nav-item"><a href="useravailfwd">Seat Availability</a></div>
+            <div class="nav-item"><a href="usersearchtrain">Search By TrainNo</a></div>
+            <div class="nav-item"><a href="userprofile">Profile</a></div>
+            <div class="nav-item"><a href="userlogout">Logout</a></div>
+        </nav>
+    </header>
+    <div class="form-container">
+        <h2>Trains Between Stations</h2>
+        <form action="trainbwstn" method="post">
+            <label>From Station:</label>
+            <input type="text" name="fromstation" required><br>
+            <label>To Station:</label>
+            <input type="text" name="tostation" required><br>
+            <input type="submit" value="SEARCH TRAIN">
+        </form>
+    </div>
+</body>
+</html>
