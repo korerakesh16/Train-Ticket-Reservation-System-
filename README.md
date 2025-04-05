@@ -77,3 +77,5 @@ Possible Future Improvements
 •	Multilingual support
 •	Role-based access (admin, user, ticket checker, etc.)
 
+USER INTERFACE
+![user interface](https://github.com/user-attachments/assets/685e55e2-a56d-43c9-897b-07d06f93b209)
