@@ -5,7 +5,7 @@
 
 	<servlet>
 		<servlet-name>ErrorHandlerServlet</servlet-name>
-		<servlet-class>com.shashi.servlets.ErrorHandlerServlet</servlet-class>
+		<servlet-class>com.train.servlets.ErrorHandlerServlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>ErrorHandlerServlet</servlet-name>
